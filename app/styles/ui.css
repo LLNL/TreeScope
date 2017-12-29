@@ -1,0 +1,121 @@
+/*
+TreeScope, Version 1.0
+Author Harsh Bhatia
+LLNL-CODE-743437
+
+Copyright (c) 2017, Lawrence Livermore National Security, LLC.
+Produced at the Lawrence Livermore National Laboratory.
+Written by Harsh Bhatia, hbhatia@llnl.gov. LLNL-CODE-743437.
+
+All rights reserved.
+
+This file is part of TreeScope. For details, see https://github.com/LLNL/TreeScope.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+/* -------------------------------------------------
+  ui
+------------------------------------------------- */
+.ui {
+  border: 1px solid;
+  float: left;
+  font-size: 14px;
+  width: 250px;
+}
+
+.ui input[type=number]{       width: 30px;  }
+.ui input[type=number].wide{  width: 50px;  }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.inputDiv {
+  padding: 1px 0 1px 5px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 5px 0;
+  text-align: center;
+}
+h3 {
+  font-size: 14px;
+  margin: 3px 0 1px 2px;
+  padding: 3px 0 1px 2px;
+}
+
+button {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 14px;
+  margin-left: 2px;
+  margin-right: 5px;
+}
+
+/* -------------------------------------------------
+  scrollable table
+------------------------------------------------- */
+
+table.scrollable {
+  border-collapse: collapse;    /*To avoid spaces between the cells*/
+  border: 2px solid black;
+  width: 100%;
+  /*font-family: Courier;
+  font-size: 11px;*/
+  font-size: 11px;
+}
+table.scrollable > thead {
+  border-bottom: 1px solid black;
+}
+table.scrollable > tbody {
+  display:block;  /* needed to span the specified height */
+  overflow: auto;
+  height: 220px;  /* this makes the height of the table = 170px*/
+}
+table.scrollable tr {
+  display:block;  /* needed to span the full width */
+}
+table.scrollable td, th {
+  display:inline-block;  /* needed to span the full width */
+  padding: 1px 7px;     /* [top and bottom] [left and right] */
+  /*border-right: 1px dashed #000;*/
+}
+table.scrollable > tbody > tr:nth-child(even) {
+  background-color: #cccccc;
+}
+table.scrollable th.sortDesc:after {
+  content: "\2193";
+}
+table.scrollable th.sortAsc:after {
+  content: "\2191";
+}
+
+/* -------------------------------------------------
+  genertic table styling
+------------------------------------------------- */
+th {  text-align: center; }
+td.tcolnum {  text-align: right;  }
+td.notlast {  border-right: 1px dashed #000;}
+tr.selectedRow {  font-weight: bold;  }

@@ -1,0 +1,110 @@
+/*
+TreeScope, Version 1.0
+Author Harsh Bhatia
+LLNL-CODE-743437
+
+Copyright (c) 2017, Lawrence Livermore National Security, LLC.
+Produced at the Lawrence Livermore National Laboratory.
+Written by Harsh Bhatia, hbhatia@llnl.gov. LLNL-CODE-743437.
+
+All rights reserved.
+
+This file is part of TreeScope. For details, see https://github.com/LLNL/TreeScope.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+.statuserror {  background: #ffb3b3;  }
+/*
+.statusinfo {   background: #e8f6fe;  }
+.statusbar {    background: #ffffff;  }
+*/
+
+.ui {
+  background-color: #eeeeee;
+  border-color:  #d3d3d3;
+}
+
+.canvas {
+  /*background-color: #e8f6fe;
+  border-color: #d3d3d3;*/
+  border-color: #ffffff;
+}
+
+.pod {
+  /*background-color: #aaa; /*#737A97* /
+  border-color: #eee;*/
+  /*background-color: #fefefe;*/
+  background-color: #ccc;
+  border-color: #000;
+}
+.switch {
+  shape-rendering:  'geometricPrecision';
+}
+
+/*
+  6 colors for summary charts!
+  taken from http://colorbrewer2.org/#type=qualitative&scheme=Paired&n=6
+
+  copy stroke values from the web and duplicate to also add fill property
+  name the classes as q0....
+*/
+
+/* single color (black)*/
+.q0-1 {fill:rgb(10,10,10)}
+.q0-1 {stroke:rgb(10,10,10)}
+
+/* set of two dark colors (red and green)*/
+.q0-2 {fill:rgb(51,160,44)}
+.q1-2 {fill:rgb(227,26,28)}
+.q0-2 {stroke:rgb(51,160,44)}
+.q1-2 {stroke:rgb(227,26,28)}
+
+/* set of six dark and accent colors*/
+.q0-3{fill:rgb(231,41,138)}
+.q0-3{stroke:rgb(231,41,138)}
+.q1-3{stroke:rgb(117,112,179)}
+.q1-3{fill:rgb(117,112,179)}
+.q2-3{fill:rgb(217,95,2)}
+.q2-3{stroke:rgb(217,95,2)}
+.q3-3{fill:rgb(251,180,174)}
+.q3-3{stroke:rgb(251,180,174)}
+.q4-3{stroke:rgb(190,174,212)}
+.q4-3{fill:rgb(190,174,212)}
+.q5-3{fill:rgb(253,192,134)}
+.q5-3{stroke:rgb(253,192,134)}
+
+
+/*
+  a class of 12 quantitative colors
+  used for jobs
+*/
+.q0-0{fill:dimgray}
+.q0-12{fill:rgb(166,206,227)}
+.q1-12{fill:rgb(31,120,180)}
+.q2-12{fill:rgb(178,223,138)}
+.q3-12{fill:rgb(51,160,44)}
+.q4-12{fill:rgb(251,154,153)}
+.q5-12{fill:rgb(227,26,28)}
+.q6-12{fill:rgb(253,191,111)}
+.q7-12{fill:rgb(255,127,0)}
+.q8-12{fill:rgb(202,178,214)}
+.q9-12{fill:rgb(106,61,154)}
+.q10-12{fill:rgb(255,255,153)}
+.q11-12{fill:rgb(177,89,40)}

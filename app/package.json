@@ -1,0 +1,26 @@
+{
+  "name": "TreeScope",
+  "version": "1.0.0",
+  "description": "TreeScope: Visualization of Performance Data for Fat-Tree Networks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harsh Bhatia (hbhatia@llnl.gov)",
+  "license": "MIT",
+  "devDependencies": {
+    "jspm": "^0.16.53"
+  },
+  "jspm": {
+    "configFile": "jspm.config.js",
+    "dependencies": {
+      "d3": "npm:d3@^4.7.3",
+      "d3-scale-chromatic": "npm:d3-scale-chromatic@^1.1.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
