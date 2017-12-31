@@ -19,9 +19,6 @@ required by TreeScope.  Tools to convert network data collected from
 the interconnect to the TreeScope-friendly format are given in
 `TreeScope/tools`.
 
- If you are interested in using TreeScope, please contact hbhatia@llnl.gov.
-
-
 ### Release
 
 Copyright (c) 2017, Lawrence Livermore National Security, LLC.

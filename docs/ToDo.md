@@ -7,3 +7,5 @@
 - **Active routing table**: TreeScope offers support for dynamic routing tables though selecting the active routing table. For current experiments and testing, this choice was disabled in the code, and should be re-enabled if needed. See src/modules/routing.js for *"TODO"*,
 
 - **Counter type**: TreeScope supports different network counters through UI selection. This choice is also currently only partially enabled, and only the counter "data_sent" is used in the tool. A proper value accessor is to be implemented to fully support all variables. Until then, we hope that the user renames his variable of interest to "data_sent".
+
+If you are interested in using TreeScope, please contact hbhatia@llnl.gov.
